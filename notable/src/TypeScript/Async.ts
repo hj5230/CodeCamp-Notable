@@ -15,7 +15,6 @@ abstract class Async {
 			body: JSON.stringify(json)
 		})
 		const res: string = await pro.text()
-		console.log(res)
 		if(res === 'ok') return true
 		else return false
 	}
