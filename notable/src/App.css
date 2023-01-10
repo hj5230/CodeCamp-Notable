@@ -1,0 +1,149 @@
+.panel {
+  width: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-top: 15px;
+}
+
+.card {
+  margin-left: 15px;
+}
+
+.list-group-item {
+  padding: 5px 10px;
+  font-size: x-small;
+  font-family: 'JetBrainsMono-Medium';
+}
+
+#btn-back {
+  position: absolute;
+  top: 14px;
+}
+
+#dropdown-back {
+  font-size: x-small;
+}
+
+#closer-title {
+  font-size: x-large;
+  font-weight: bold;
+  
+}
+
+#closer-time {
+  font-size: x-small;
+  color: gray;
+}
+
+#row-edit {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#newrow-badge {
+  margin-bottom: 0 0 0;
+}
+
+.calc-panel {
+  max-width: 380px;
+  max-height: 580px;
+}
+
+.cal {
+  width: 340px;
+  height: 440px;
+  background-color: rgb(255, 255, 255);
+}
+
+.show-num {
+  margin-bottom: 10px;
+}
+
+.show-num input {
+  width: calc(100% - 10px);
+  height: 60px;
+  outline:none;
+  border:none;
+  color: #fff;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 40px;
+  background-color: #252525;
+}
+
+.show-num input:last-child {
+  height: 60px;
+  font-size: 30px;
+  color: #cdc7c7;
+}
+
+.btn-cont .line {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  margin-bottom: 10px;
+  place-items: center;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+.line1 {
+  display: grid;
+  grid-gap: 10px;
+  place-items: center;
+  grid-template-columns: 2fr repeat(2,1fr);
+  margin-bottom: 10px;
+}
+
+.line2 {
+  display: grid;
+  grid-gap: 10px;
+  place-items: center;
+  grid-template-columns: repeat(2,1fr) 2fr;
+}
+
+.btn-cont button {
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #999;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.line button:last-child, .line1 button:last-child {
+  background-color: hsl(222, 54%, 47%);
+  color: rgb(255, 255, 255);
+}
+
+.line1 button:nth-child(2) {
+  background-color: #b07a22;
+  color: rgb(255, 255, 255);
+}
+
+.line1 button:first-child ,.line2 button:last-child {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  font-size: 24px;
+}
+
+.line1 button:first-child {
+  background-color: rgb(161, 42, 42);
+  color: rgb(255, 255, 255);
+}
+
+.btn-cont button:active {
+  box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.888);
+}
+
+@font-face {
+  font-family: 'JetBrainsMono-Medium';
+  src: url('../public/JetBrainsMono-Medium.woff2');
+}
