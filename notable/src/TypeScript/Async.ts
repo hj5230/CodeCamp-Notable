@@ -5,7 +5,6 @@ abstract class Async {
 		return res
     }
 	public static saveChanges: (url: string, json: object) => Promise<boolean> = async(url, json) => {
-		console.log(json)
 		const pro: Response = await fetch(url, {
 			headers: {
 				'Accept': 'application/json',
