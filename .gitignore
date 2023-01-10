@@ -1,9 +1,3 @@
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-
+.vscode/
 node_modules/
 notable/node_modules/
