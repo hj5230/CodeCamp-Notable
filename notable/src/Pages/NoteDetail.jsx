@@ -2,7 +2,11 @@ import React from 'react';
 import { Card, Button, ListGroup, Nav, Form, Dropdown, ButtonGroup, Badge } from 'react-bootstrap';
 import { RowObj } from '../TypeScript/Skeleton.ts';
 
-class Closer extends React.PureComponent {
+/* 
+Component NoteDetail
+render note's detail when open a note
+*/
+class NoteDetail extends React.PureComponent {
   constructor(props) {
     super(props)
     let obj
@@ -118,4 +122,4 @@ class Closer extends React.PureComponent {
   }
 }
 
-export default Closer;
+export default NoteDetail;

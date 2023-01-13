@@ -1,6 +1,10 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
+/* 
+Component Note
+render at Index page
+*/
 class Note extends React.PureComponent {
   handleDel = () => {
     this.props.delNote(this.props.createTime)

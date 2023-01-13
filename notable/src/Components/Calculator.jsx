@@ -3,6 +3,11 @@ import React from 'react'
 // eslint-disable-next-line no-unused-vars
 import { Card } from 'react-bootstrap';
 
+/* 
+Component Calculator
+Source code for calculator tooltip
+bind to button "Calculator"
+*/
 class Calculator extends React.Component {
   constructor() {
     super();

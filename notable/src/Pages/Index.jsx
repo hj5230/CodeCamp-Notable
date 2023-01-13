@@ -3,6 +3,10 @@ import { Card, Button, Form, InputGroup, Row } from 'react-bootstrap';
 import Note from '../Components/Note';
 import { NoteObj } from '../TypeScript/Skeleton.ts'
 
+/* 
+Component Index
+index page for the app
+*/
 class Index extends React.PureComponent {
   state = {
     title: ''

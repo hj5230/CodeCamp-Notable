@@ -2,6 +2,9 @@ import React from 'react';
 import { Navbar, Container, Nav, Button, ButtonGroup, OverlayTrigger } from 'react-bootstrap';
 import Calculator from './Calculator';
 
+/* 
+Component React-Bootstrap Navbar
+*/
 class RBNavbar extends React.PureComponent {
   handleIndexPage = () => {
     this.props.farther()

@@ -5,10 +5,13 @@ import { NoteObj, RowObj } from './TypeScript/Skeleton.ts';
 import { Async } from './TypeScript/Async.ts'
 import RBNavbar from './Components/RBNavbar';
 import Index from './Pages/Index';
-import Closer from './Pages/Closer';
+import NoteDetail from './Pages/NoteDetail';
 import Translate from './Pages/Translate'
-// import storage from './Storage/main.json'
 
+/* 
+App Component
+Main component of the app, parent of all the other components
+*/
 class App extends React.PureComponent {
   state = {
     page: 0,
@@ -106,7 +109,7 @@ class App extends React.PureComponent {
       />
     ) 
     else if(this.state.page === 1) return (
-      <Closer
+      <NoteDetail
       // cb
       farther={this.willFarther} save={this.corsPolicyIsAlsoSillyWhyNotAllowAllByDefault}
       // msg
