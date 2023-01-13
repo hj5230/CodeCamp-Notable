@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NoteObj, RowObj } from './TypeScript/Skeleton.ts';
-import { Async } from './TypeScript/Async.ts'
+import { NoteObj, RowObj } from './Utils/Skeleton.ts';
+import { Async } from './Utils/Async.ts'
 import RBNavbar from './Components/RBNavbar';
 import Index from './Pages/Index';
 import NoteDetail from './Pages/NoteDetail';
@@ -20,9 +20,9 @@ class App extends React.PureComponent {
     identifier: '',
   }
   componentDidMount() {
-    this.whyItHaveToReturnBeforeAwaitHowStupidIsThat()
+    this.fetchFromStorage()
   }
-  whyItHaveToReturnBeforeAwaitHowStupidIsThat = async() => {
+  fetchFromStorage = async() => {
     let storage = await Async.fetchStorage('http://localhost:3001')
     let notes = []
     let words
@@ -40,7 +40,7 @@ class App extends React.PureComponent {
       notes: notes
     })
   }
-  corsPolicyIsAlsoSillyWhyNotAllowAllByDefault = async() => {
+  saveToStorage = async() => {
     let origin = this.state.notes
     let json = {
       notes: []
@@ -61,7 +61,7 @@ class App extends React.PureComponent {
         notes: [...this.state.notes, note]
       }
     }, () => {
-      this.corsPolicyIsAlsoSillyWhyNotAllowAllByDefault()
+      this.saveToStorage()
     })
   }
   deleteNote = (createTime) => {
@@ -77,7 +77,7 @@ class App extends React.PureComponent {
         notes: temp
       }
     }, () => {
-      this.corsPolicyIsAlsoSillyWhyNotAllowAllByDefault()
+      this.saveToStorage()
     })
   }
   willFarther = () => {
@@ -97,7 +97,7 @@ class App extends React.PureComponent {
     })
   }
   willSave = () => {
-    this.corsPolicyIsAlsoSillyWhyNotAllowAllByDefault()
+    this.saveToStorage()
   }
   whichPage = () => {
     if(this.state.page === 0) return (
@@ -111,7 +111,7 @@ class App extends React.PureComponent {
     else if(this.state.page === 1) return (
       <NoteDetail
       // cb
-      farther={this.willFarther} save={this.corsPolicyIsAlsoSillyWhyNotAllowAllByDefault}
+      farther={this.willFarther} save={this.saveToStorage}
       // msg
       id={this.state.identifier} notes={this.state.notes}
       />
