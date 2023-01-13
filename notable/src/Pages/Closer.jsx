@@ -85,7 +85,7 @@ class Closer extends React.PureComponent {
             <ListGroup variant='flush'>
               {this.state.content.map(item => (
                 (item.getLine() === parseInt(this.state.modiRow)) ? (
-                    <Form.Control key={item.getLine()} id='row-edit' defaultValue={item.getWords()} onBlur={this.handleDoneEdit} />
+                  <Form.Control key={item.getLine()} id='row-edit' defaultValue={item.getWords()} onBlur={this.handleDoneEdit} />
                 ) : (
                   <ListGroup.Item key={item.getLine()} id={item.getLine()} onClick={this.handleClickRow}>
                     {/* <div className='d-flex justify-content-between bg-light mb-3'>
