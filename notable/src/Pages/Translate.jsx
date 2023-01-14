@@ -5,10 +5,12 @@ Component Translate
 translate page, bind to button "Translate"
 */
 class Translate extends React.PureComponent {
-  state = {
-    
-  }
+  constructor(props) {
+    super(props)
+    this.state = {
 
+    }
+  }
   render() {
     return (
         <>

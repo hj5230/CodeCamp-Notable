@@ -9,8 +9,12 @@ Component Index
 index page for the app
 */
 class Index extends React.PureComponent {
-  state = {
-    title: ''
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      title: ''
+    }
   }
   handleClick = () => {
     if(this.state.title === '') return alert('Cannot add a note without title')

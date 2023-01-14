@@ -13,11 +13,14 @@ App Component
 Main component of the app, parent of all the other components
 */
 class App extends React.PureComponent {
-  state = {
-    page: 0,
-    notes: [],
-    // closer-props
-    identifier: '',
+  constructor(props) {
+    super(props)
+    this.state = {
+      page: 0,
+      notes: [],
+      // closer-props
+      identifier: '',
+    }
   }
   componentDidMount() {
     this.fetchFromStorage()
