@@ -13,7 +13,7 @@
 .list-group-item {
   padding: 5px 10px;
   font-size: x-small;
-  font-family: 'JetBrainsMono-Medium';
+  font-family: "JetBrainsMono-Medium";
 }
 
 #btn-back {
@@ -28,7 +28,6 @@
 #closer-title {
   font-size: x-large;
   font-weight: bold;
-  
 }
 
 #closer-time {
@@ -43,6 +42,15 @@
 
 #newrow-badge {
   margin-bottom: 0 0 0;
+}
+
+.btn-translate {
+  float: right;
+  /* padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px; */
+  max-width: 30px;
+  max-height: 28px;
 }
 
 .calc-panel {
@@ -63,8 +71,8 @@
 .show-num input {
   width: calc(100% - 10px);
   height: 60px;
-  outline:none;
-  border:none;
+  outline: none;
+  border: none;
   color: #fff;
   text-align: right;
   padding-right: 15px;
@@ -80,7 +88,7 @@
 
 .btn-cont .line {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin-bottom: 10px;
   place-items: center;
@@ -94,7 +102,7 @@
   display: grid;
   grid-gap: 10px;
   place-items: center;
-  grid-template-columns: 2fr repeat(2,1fr);
+  grid-template-columns: 2fr repeat(2, 1fr);
   margin-bottom: 10px;
 }
 
@@ -102,7 +110,7 @@
   display: grid;
   grid-gap: 10px;
   place-items: center;
-  grid-template-columns: repeat(2,1fr) 2fr;
+  grid-template-columns: repeat(2, 1fr) 2fr;
 }
 
 .btn-cont button {
@@ -117,7 +125,8 @@
   font-size: 20px;
 }
 
-.line button:last-child, .line1 button:last-child {
+.line button:last-child,
+.line1 button:last-child {
   background-color: hsl(222, 54%, 47%);
   color: rgb(255, 255, 255);
 }
@@ -127,7 +136,8 @@
   color: rgb(255, 255, 255);
 }
 
-.line1 button:first-child ,.line2 button:last-child {
+.line1 button:first-child,
+.line2 button:last-child {
   width: 100%;
   height: 100%;
   border-radius: 50px;
@@ -144,6 +154,6 @@
 }
 
 @font-face {
-  font-family: 'JetBrainsMono-Medium';
-  src: url('../public/JetBrainsMono-Medium.woff2');
+  font-family: "JetBrainsMono-Medium";
+  src: url("../public/JetBrainsMono-Medium.woff2");
 }

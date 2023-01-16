@@ -1,3 +1,5 @@
 .vscode/
 server/node_modules/
 notable/node_modules/
+server/dist/
+server/storage.json
