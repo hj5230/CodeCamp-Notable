@@ -74,8 +74,11 @@ class NoteDetail extends React.PureComponent {
             <Card.Header>
               <Nav>
                 <Nav.Item>
-                <ButtonGroup size="sm" id="btn-back">
-                    <Button variant="outline-primary" onClick={this.handleSaveBack}>
+                  <ButtonGroup size="sm" id="btn-back">
+                    <Button
+                      variant="outline-primary"
+                      onClick={this.handleSaveBack}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -140,7 +143,7 @@ class NoteDetail extends React.PureComponent {
                       onClick={this.handleClickRow}
                     >
                       <Badge pill bg="light" text="secondary">
-                        {item.getLine()}
+                        {item.getLine() + 1}
                       </Badge>{" "}
                       {item.getWords()}
                     </ListGroup.Item>
